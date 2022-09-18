@@ -1,11 +1,12 @@
 import { useEffect, useCallback } from "preact/compat";
+import "./dummy.scss";
 import { signal } from "@preact/signals";
 const count = signal(0);
 const selected = signal("Apple");
 const fruits = ["Apple", "Mango", "Banana", "Strawberry"];
 export default function Dummy({ name }) {
   return (
-    <div>
+    <div className="dummy">
       <p>{count}</p>
       <button onClick={() => count.value++}>ADd</button>
       <div style={{ display: "flex" }}>

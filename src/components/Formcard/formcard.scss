@@ -1,0 +1,132 @@
+$desk: 100/1920;
+$deskHeight: 100/1080;
+
+.__form_Card__ {
+  display: flex;
+  // width: 88vw;
+  height: 935 * $deskHeight + vh;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 1px 2px 8px 0px rgba(0, 0, 0, 0.72);
+  font-family: Poppins;
+  background-color: #fff;
+  transition: all 1s;
+  .cp-text2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 14 * $desk + vw;
+    bottom: -1.5vw;
+  }
+  .company_info {
+    position: relative;
+    width: 800 * $desk + vw;
+    background-color: var(--primary);
+    overflow: hidden;
+    .logo {
+      width: 145 * $desk + vw;
+      // width: 120 * $desk + vw;
+      margin: 20 * $desk + vw;
+    }
+
+    ._slider {
+      position: relative;
+      display: block;
+      margin: 70 * $desk + vw auto;
+      margin-bottom: 0;
+      width: 575 * $desk + vw;
+      .slider_content_wrapper {
+        position: relative;
+        top: -7vw;
+      }
+      .slider_content {
+        color: #fff;
+        .slider_img {
+          margin-bottom: 28 * $desk + vw;
+          height: 330 * $desk + vw;
+          width: 100%;
+          object-fit: contain;
+        }
+        .slider_header {
+          font-weight: normal;
+          font-size: 48 * $desk + vw;
+          font-family: "Rubik";
+          text-align: center;
+        }
+        .slider_desc {
+          display: block;
+          margin: 0 auto;
+          margin-top: 30 * $desk + vw;
+          font-size: 12 * $desk + vw;
+          font-family: "Source Sans Pro";
+          text-align: center;
+          width: 70%;
+        }
+      }
+      .slick-dots {
+        bottom: -70px;
+        li {
+          width: 30px;
+          height: 4px;
+          border-radius: 8px;
+          margin: 0 3px;
+        }
+      }
+      .slick-dots li.slick-active button:before {
+        opacity: 1;
+        color: #9ec8ff !important;
+        background: #9ec8ff;
+      }
+
+      .slick-dots li button:before {
+        color: white !important;
+        background: #fff;
+        border-radius: 8px;
+        width: 30px;
+        height: 4px;
+
+        opacity: 1;
+        content: "";
+      }
+    }
+
+    .brand_name {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+    }
+
+    .cp-text {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 20 * $desk + vw;
+      // left: 50%;
+      // transform: translateX(-50%);
+    }
+  }
+  .d_data {
+    position: relative;
+    background-color: #fff;
+    width: 850 * $desk + vw;
+    height: 100%;
+    padding: 20 * $desk + vw 180 * $desk + vw;
+    box-shadow: 0px 0px -4px 0px rgba(0, 0, 0, 0.52);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+}
+
+._form__header {
+  color: #111b60;
+  align-items: center;
+  display: flex;
+  font-size: 24 * $desk + vw;
+  span {
+    color: var(--primary);
+    font-family: "Work Sans";
+    font-weight: 700;
+    margin-left: 6px;
+  }
+}
