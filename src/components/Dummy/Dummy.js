@@ -1,4 +1,4 @@
-import { useEffect } from "preact/compat";
+import { useEffect, useCallback } from "preact/compat";
 import { signal } from "@preact/signals";
 const count = signal(0);
 const selected = signal("Apple");
